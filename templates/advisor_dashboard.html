@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Faculty Advisor Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Define the CSS to highlight the row in red */
+        .at-risk-yes {
+            background-color: #ffcccc; /* Light red color */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h1>Welcome, Faculty Advisor!</h1>
+        <hr>
+
+        <!-- Section for Appointments -->
+        <h2>Your Appointments</h2>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Appointments from Students</h5>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Classification</th>
+                            <th>Appointment Date</th>
+                            <th>Appointment Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Sample list of appointments (replace with dynamic data from backend) -->
+                        <tr>
+                            <td>Student A</td>
+                            <td>Senior</td>
+                            <td>MM/DD/YYYY</td>
+                            <td>HH:MM</td>
+                        </tr>
+                        <!-- Add more rows for other appointments -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Section for Current List of Students -->
+        <h2>Your Current List of Students</h2>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Your students:</h5>
+                <table class="table table-bordered table-hover">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Major</th>
+                            <th>Classification</th>
+                            <th>Registration Pin</th>
+                            <th>At-Risk of Failing</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Sample list of students (replace with dynamic data from backend) -->
+                        <tr>
+                            <td>Student Name A</td>
+                            <td>Computer Science</td>
+                            <td>Junior</td>
+                            <td>123456</td>
+                            <td class="at-risk">No</td>
+                        </tr>
+                        <!-- Add more rows for other students -->
+                        tr>
+                            <td>Student Name A</td>
+                            <td>Computer Science</td>
+                            <td>Junior</td>
+                            <td>123456</td>
+                            <td class="at-risk">Yes</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (for components like collapse, modal, etc., if

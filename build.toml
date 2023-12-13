@@ -1,0 +1,6 @@
+[[build.env]]
+    name = "GOOGLE_PYTHON_VERSION"
+    value = "3.10.1"
+    [[build.env]]
+    name = "GOOGLE_BUILDABLE"
+    value = "bisonadvisor"

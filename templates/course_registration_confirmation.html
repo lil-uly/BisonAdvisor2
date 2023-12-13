@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Course Registration Confirmation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    {% extends "base-student.html" %}
+    {% block title %}Course Search{% endblock %}
+    {% block content %}
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">Course Registration Confirmed!</h4>
+            <p>You have successfully registered for the following courses:</p>
+            <ul>
+                <li>Course 1: Introduction to Computer Science</li>
+                <li>Course 2: Calculus I</li>
+                <li>Course 3: Literature and Writing</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+{% endblock %}
+</html>

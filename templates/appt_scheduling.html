@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Appointment Scheduling</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    {% extends "base-student.html" %}
+    {% block title %}Course Search{% endblock %}
+    {% block content %}
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2 class="mb-4">Schedule an Appointment</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Available Dates</h4>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">October 15, 2023 - 9:00 AM</a>
+                    <a href="#" class="list-group-item list-group-item-action">October 15, 2023 - 10:00 AM</a>
+                    <a href="#" class="list-group-item list-group-item-action">October 16, 2023 - 11:00 AM</a>
+                    <!-- Add more available dates -->
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h4>Selected Appointment</h4>
+                <div class="card">
+                    <div class="card-body">
+                        <p>Date: <span id="selectedDate">Select a date</span></p>
+                        <p>Time: <span id="selectedTime">Select a time</span></p>
+                        <p>Advisor: <span id="selectedAdvisor">Select an advisor</span></p>
+                        <!-- Additional appointment details -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+{% endblock %}
+
+</html>

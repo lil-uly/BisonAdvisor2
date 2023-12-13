@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Course Search</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+{% extends "base-student.html" %}
+{% block title %}Course Search{% endblock %}
+{% block content %}
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2 class="mb-4">Course Search</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="department">Department</label>
+                    <input type="text" class="form-control" id="department" placeholder="Enter department">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="courseCode">Course Code</label>
+                    <input type="text" class="form-control" id="courseCode" placeholder="Enter course code">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="keyword">Keyword</label>
+                <input type="text" class="form-control" id="keyword" placeholder="Enter keyword">
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+
+        <!-- Display search results -->
+        <div class="mt-4">
+            <h4>Search Results</h4>
+            <ul class="list-group">
+                <li class="list-group-item">Course 1: Introduction to Computer Science</li>
+                <li class="list-group-item">Course 2: Calculus I</li>
+                <li class="list-group-item">Course 3: Literature and Writing</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+{% endblock %}
+
+</html>

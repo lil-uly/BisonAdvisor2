@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ student_content.title }}</title>
+</head>
+<body>
+    <h1>{{ student_content.title }}</h1>
+    <h2>Tips:</h2>
+    <ul>
+        {% for tip in student_content.tips %}
+            <li>{{ tip }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Resources:</h2>
+    <ul>
+        {% for resource in student_content.resources %}
+            <li><a href="{{ resource.link }}">{{ resource.name }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+p

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    {% extends "base-student.html" %}
+    {% block title %}Course Search{% endblock %}
+    {% block content %}
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2 class="mb-4">Profile</h2>
+        <form>
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" class="form-control" id="fullName" value="John Doe" disabled>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" value="john.doe@bison.howard.edu" disabled>
+            </div>
+            <div class="form-group">
+                <label for="major">Major</label>
+                <input type="text" class="form-control" id="major" value="Computer Science">
+            </div>
+            <div class="form-group">
+                <label for="classification">Classification</label>
+                <input type="text" class="form-control" id="classification" value="Junior">
+            </div>
+            <div class="form-group">
+                <label for="academicHistory">Academic History</label>
+                <textarea class="form-control" id="academicHistory" rows="5" disabled>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod.
+                </textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Update Profile</button>
+        </form>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    {% endblock %}
+</html>
